@@ -84,6 +84,7 @@ $conn = mysqli_connect($server,$username,$password,$database);
             </div>
             <div class="col-lg-6">
             <img src="/bootstrap-gridlayout/images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" alt="">
+            
             </div>
             
         </div>
@@ -96,7 +97,7 @@ $conn = mysqli_connect($server,$username,$password,$database);
 
     </div>
     <!-- Card 1 Strats Here -->
-    <form action="aboutus.php" method="POST">
+   
       <div class="container py-5">
           <div class="row">
               <div class="col-lg-4 ">
@@ -149,6 +150,8 @@ $conn = mysqli_connect($server,$username,$password,$database);
       <!-- Card 3 Ends Here -->
 
       <div class="container">
+      <form action="aboutus.php" method="POST">
+
         <div class="row g-3 px-5 py-5 align-items-center">
             
             <div class="col-lg-12">
@@ -166,9 +169,9 @@ $conn = mysqli_connect($server,$username,$password,$database);
               
             
           </div>
-
+          </form>
       </div>
-      </form>
+     
 
       <hr>
 
