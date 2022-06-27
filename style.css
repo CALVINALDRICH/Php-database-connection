@@ -40,7 +40,10 @@ img{
     
 }
 .kind{
-    box-shadow: inset;
+     box-shadow: inset; 
+    border-radius: 15px;
+    border-style:solid;     
+    
 }
 .ping{
     text-align: center;
@@ -52,3 +55,6 @@ img{
 .fa{
     align-items: center;
 }
+/* .arcade{
+    padding: 100px;
+} */

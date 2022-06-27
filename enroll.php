@@ -42,14 +42,12 @@
         <span class="py-4">
             <i  class=" fa fa-map-marker fa-lg fa-2x"></i>
             
-            <span>
-                Zalego Academy,
-                
-                 <span > <br>
-                  Devan Plaza.
-                  </span>
+            <span >
+                Zalego Academy 
             </span>
-            
+             <span class="px-5"> <br>
+                  Devan Plaza.
+            </span>
             
         </span>
      
@@ -76,7 +74,7 @@
         
     <!-- Paragraph ends here  -->
     <!-- sign up part -->
-    <form action="enroll.php" method="POST">
+    <form action="enroll.php" method="POST" >
     <div class="kind container col-lg-12 px-5 bg-light ">
     
        <h2 class="patience text-secondary">Sign up today?</h2>
@@ -99,7 +97,7 @@
                <div class="row">
                 <div class="mb-3 px-5 col-lg-6" >
                     <label for="EmailAddress"  class="form-label"><h6>Email Address:</h6></label>
-                    <input type="tel" name="email" class=" joy shadow form-control" placeholder="Please Enter Your Phone Number" >
+                    <input type="email" name="email" class=" joy shadow form-control" placeholder="Please Enter Your Phone Number" >
                     
                   </div>
   
@@ -108,8 +106,8 @@
                       
                       <select class="form-select joy shadow form-control" name="gender" type="email"  aria-label="Default select example">
                        <option selected><h1>--Select Your Gender--</h1></option>
-                       <option value="1">Male</option>
-                       <option value="2">Female</option>
+                       <option value="Male">Male</option>
+                       <option value="Female">Female</option>
                       </select>
                       
                       
@@ -131,10 +129,10 @@
                       
                     <select  class="form-select joy shadow form-control" name="course"  aria-label="Default select example">
                        <option selected><h6>--Select Your Course--</h6></option>
-                       <option value="1.">Android App Development</option>
-                       <option value="2.">Web Design & Development</option>
-                       <option value="3.">Data Analysis</option>
-                       <option value="4.">Cyber Security</option>
+                       <option value="Android App Development">Android App Development</option>
+                       <option value="Web Design & Development">Web Design & Development</option>
+                       <option value="Data Analysis">Data Analysis</option>
+                       <option value="Cyber Security">Cyber Security</option>
                     </select>
                     
                </div>

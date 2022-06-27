@@ -68,14 +68,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem culpa aliquid nisi omnis repudiandae expedita sint reiciendis ut eaque ullam perspiciatis dolorum doloremque quis deleniti rem debitis sequi, 
                maxime exercitationem cumque architecto doloribus labore eos! Libero fugit dolore eligendi at ab hic nesciunt doloribus, obcaecati, qui magni saepe repellendus!</p>
                <form action="index.php" method="POST">
-               <?php 
-                    if($response)
-                    {
-                        include('response.php');
-                    }
-                
-                ?>
-                   
+              
                <div class="row">
                 <div class="mb-3 col-lg-6" >
                     <label for="FirstName" class="form-label">First Name</label>
@@ -114,6 +107,14 @@
                </div>
                <br>
                <button class="btn btn-primary">Send A Message</button>
+               <?php 
+                    if($response)
+                    {
+                        include('response.php');
+                    }
+                
+                ?>
+                   
                 </form>
         </div>
         <!-- contact us page ends here -->
