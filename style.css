@@ -13,4 +13,42 @@ img{
 .blessed-container{
     box-shadow: inset;
 }
+.pink{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin:0px;
+    text-align: center;
+    
 
+}
+.love {
+    text-align: center;
+    box-shadow: inset;
+}
+.patience{
+    text-align: center;
+}
+.joy{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:0px;
+    text-align: left;
+    box-shadow: inset;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}
+.kind{
+    box-shadow: inset;
+}
+.ping{
+    text-align: center;
+}
+.jesus{
+    padding: 0px;
+    margin: 0px;
+}
+.fa{
+    align-items: center;
+}

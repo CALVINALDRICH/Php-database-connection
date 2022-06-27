@@ -1,32 +1,4 @@
-<?php
-// The database connection
-$server="localhost";
-$username="root";
-$password="";
-$database="zalego";
-
-$conn = mysqli_connect($server,$username,$password,$database);
-
-    if(isset($_POST ['submitButton']))
-    {
-      $email = $_POST['email'];
-
-      // submission of the data 
-      $insertData = mysqli_query($conn,
-        "INSERT INTO subscribers(email)
-         VALUES('$email')");
-         
-         if($insertData)
-         {
-          echo "Data Submitted Successfully";
-         }
-         else
-         {
-          echo "Error Occured";
-         }
-    }
-
-?>
+<?php include('subscribe.php') ?>
 
 
 
@@ -54,6 +26,10 @@ $conn = mysqli_connect($server,$username,$password,$database);
                 <a href="index.php" class="nav-link ">Home</a>
                 <a href="aboutus.php" class="nav-link active ">About Us</a>
                 <a href="#" class="nav-link ">Contact Us</a>
+                <a href="enroll.php" class="nav-link  ">
+                <button type="button" class="pink btn btn-outline-primary">Register Now</button>
+                </a>
+
              </div>
            </div>
        
@@ -151,8 +127,15 @@ $conn = mysqli_connect($server,$username,$password,$database);
 
       <div class="container">
       <form action="aboutus.php" method="POST">
+      <?php 
+                    if($response)
+                    {
+                        include('response.php');
+                    }
+                
+                ?>
 
-        <div class="row g-3 px-5 py-5 align-items-center">
+        <div class="row g-3 px-5 py-5 mb-3 align-items-center">
             
             <div class="col-lg-12">
             <span id="emailHelpInline" class="form-text">
@@ -175,13 +158,7 @@ $conn = mysqli_connect($server,$username,$password,$database);
 
       <hr>
 
-      <div>
-        
-            <footer>
-                &copy;
-                Company 2022
-            </footer>
-        </div>
+     
 
 
       

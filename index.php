@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Bootstrap grid layout</title>
-</head>
+<?php  include('process.php')  ?>
+<?php  include('header.php')?>
+
+
+
 <body>
     <!-- NAVIGATION BAR STARTS HERE  -->
     <nav class="navbar navbar-expand-lg bg-light fixed-top shadow py-0 " >
@@ -22,6 +17,9 @@
                 <a href="index.php" class="nav-link active">Home</a>
                 <a href="aboutus.php" class="nav-link ">About Us</a>
                 <a href="#" class="nav-link ">Contact Us</a>
+                <a href="enroll.php" class="nav-link  ">
+                <button type="button" class="pink btn btn-outline-primary">Register Now</button>
+                </a>
              </div>
            </div>
        
@@ -69,7 +67,14 @@
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem culpa aliquid nisi omnis repudiandae expedita sint reiciendis ut eaque ullam perspiciatis dolorum doloremque quis deleniti rem debitis sequi, 
                maxime exercitationem cumque architecto doloribus labore eos! Libero fugit dolore eligendi at ab hic nesciunt doloribus, obcaecati, qui magni saepe repellendus!</p>
-               <form>
+               <form action="index.php" method="POST">
+               <?php 
+                    if($response)
+                    {
+                        include('response.php');
+                    }
+                
+                ?>
                    
                <div class="row">
                 <div class="mb-3 col-lg-6" >
