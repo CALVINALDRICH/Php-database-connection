@@ -104,7 +104,7 @@
                   <div class="mb-3 px-5  col-lg-6">
                       <label for="What'sYourGender"  class="form-label"><h6>What's Your Gender?</h6></label>
                       
-                      <select class="form-select joy shadow form-control" name="gender" type="email"  aria-label="Default select example">
+                      <select class="form-select joy shadow form-control" name="gender" type="text"  aria-label="Default select example">
                        <option selected><h1>--Select Your Gender--</h1></option>
                        <option value="Male">Male</option>
                        <option value="Female">Female</option>
@@ -201,7 +201,7 @@
                 ?>
       
 
-        <div class=" row g-2 px-5 pt-0  align-items-center">
+        <div class=" row g-2 px-5 pt-0  align-items-center offset-md-2">
         <div class="col-lg-6 px-5 ">
               <input type="email" name ="email" id="inputemail" class="form-control" placeholder="Your email address" >
             </div>
@@ -211,6 +211,8 @@
               
             
           </div>
+
+          
           </form>
       </div>
                
